@@ -12,7 +12,7 @@ node {
 
     //stage 1 : connect to gcr.
     stage('connecting') {
-        sh("gcloud auth activate-service-account  jenkins-198@feisty-deck-351210.iam.gserviceaccount.com  --key-file=/var/jenkins_home")
+        sh("gcloud auth activate-service-account  jenkins-198@feisty-deck-351210.iam.gserviceaccount.com  --key-file=/var/jenkins_home/jenkinskey.json")
         sh("gcloud auth configure-docker")
     }
     
